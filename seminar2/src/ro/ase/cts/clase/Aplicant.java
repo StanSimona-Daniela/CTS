@@ -44,8 +44,7 @@ public abstract class Aplicant{
 
 	@Override
 	public String toString() {
-		return "Aplicant{" +
-				"nume='" + nume + '\'' +
+		return "nume='" + nume + '\'' +
 				", prenume='" + prenume + '\'' +
 				", varsta=" + varsta +
 				", punctaj=" + punctaj +
