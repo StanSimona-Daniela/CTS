@@ -2,7 +2,6 @@ package Program;
 
 public abstract class Animal {
     private String name;
-    //s1
 
     public Animal(String name) {
         this.name = name;

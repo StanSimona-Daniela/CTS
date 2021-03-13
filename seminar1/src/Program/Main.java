@@ -11,7 +11,6 @@ public class Main {
         zoo.Add(g2);
 
         zoo.feedAllAnimmals();
-        //
 
     }
 }

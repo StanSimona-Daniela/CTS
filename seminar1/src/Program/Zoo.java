@@ -20,7 +20,6 @@ public class Zoo {
     public void Add(Animal animal) {
         this.animals.add(animal);
     }
-//
     public void feedAllAnimmals() {
         for ( Animal a : animals) {
             zookeper.feed(a);
