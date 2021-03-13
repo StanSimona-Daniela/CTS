@@ -20,7 +20,7 @@ public class Program {
 			for(Aplicant aplicant:listaAplicant)
 				System.out.println(aplicant.toString());
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
+			// TODO Auto-generated catch blockaaa
 			e.printStackTrace();
 		}
 	}
