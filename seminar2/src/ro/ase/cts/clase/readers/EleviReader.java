@@ -17,23 +17,23 @@ public class EleviReader extends Readable{
 
     @Override
     public List<Aplicant> readAplicanti() throws FileNotFoundException {
-        Scanner input2 = new Scanner(new File(super.fileName));
-        input2.useDelimiter(",|\n");
-        List<Aplicant> elevi = new ArrayList<Aplicant>();
+        Scanner input = new Scanner(new File(super.fileName));
+        input.useDelimiter(",|\n");
+        List<Aplicant> aplicanti = new ArrayList<Aplicant>();
 
-        while (input2.hasNext()) {
+        while (input.hasNext()) {
             Elev elev = new Elev();
-            super.readAplicant(input2, elev);
+            super.readAplicant(input, elev);
 
-            int clasa = input2.nextInt();
-            String tutore = input2.next();
+            int clasa = input.nextInt();
+            String tutore = input.next();
 
             elev.setClasa(clasa);
-            elev.setTutore(tutore);
-            elevi.add(elev);
+            elev.setNumeTutore(tutore);
+            aplicanti.add(elev);
         }
 
-        input2.close();
-        return elevi;
+        input.close();
+        return aplicanti;
     }
 }

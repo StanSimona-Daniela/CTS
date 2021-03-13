@@ -19,7 +19,7 @@ public class StudentiReader extends Readable{
     public List<Aplicant> readAplicanti() throws FileNotFoundException {
         Scanner input = new Scanner(new File(super.fileName));
         input.useDelimiter(",|\n");
-        List<Aplicant> studenti = new ArrayList<Aplicant>();
+        List<Aplicant> aplicanti = new ArrayList<Aplicant>();
 
         while (input.hasNext()) {
           Student student = new Student();
@@ -31,9 +31,9 @@ public class StudentiReader extends Readable{
           student.setAn_studii(an_studii);
           student.setFacultate(facultate);
 
-          studenti.add(student);
+          aplicanti.add(student);
         }
         input.close();
-        return studenti;
+        return aplicanti;
     }
 }

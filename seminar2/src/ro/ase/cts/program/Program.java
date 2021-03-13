@@ -15,11 +15,11 @@ public class Program {
 	}
 
 	public static void main(String[] args) {
-		List<Aplicant> listaAplicant;
+		List<Aplicant> listaAplicanti;
 		Proiect proiect = new Proiect(80);
 		try {
-			listaAplicant = citesteAplicanti(new EleviReader("Seminar2/elevi.txt"));
-			for(Aplicant aplicant:listaAplicant) {
+			listaAplicanti = citesteAplicanti(new EleviReader("Seminar2/elevi.txt"));
+			for(Aplicant aplicant:listaAplicanti) {
 				System.out.println(aplicant.toString());
 				System.out.println(aplicant.getFinantare());
 				aplicant.displayStateInProject(proiect);

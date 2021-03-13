@@ -22,14 +22,14 @@ public abstract class Readable {
         int varsta = scanner.nextInt();
         int punctaj = scanner.nextInt();
         int nr = scanner.nextInt();
-        String[] vect = new String[5];
+        String[] denumiriProiecte = new String[5];
         for (int i = 0; i < nr; i++)
-            vect[i] = scanner.next();
+            denumiriProiecte[i] = scanner.next();
         aplicant.setNume(nume);
         aplicant.setPrenume(prenume);
         aplicant.setVarsta(varsta);
         aplicant.setPunctaj(punctaj);
-        aplicant.setDenumiriProiecte(vect,nr);
+        aplicant.setDenumiriProiecte(denumiriProiecte,nr);
     }
 
 }
