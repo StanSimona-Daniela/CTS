@@ -8,14 +8,14 @@ public class ParlamentLazy {
 
     private static ParlamentLazy parlamentLazy = null;
 
-    //i zic la runtime cu ce initializeze
+    //ii zic la runtime cu ce sa initializeze
     public static  synchronized ParlamentLazy getInstance(String tara, int nrParlamentari, int durataMandat, String denumireSediu){
         if(parlamentLazy== null){
             parlamentLazy = new ParlamentLazy(tara,nrParlamentari, durataMandat, denumireSediu);
         }
         return parlamentLazy;
     }
-
+//constr privati
     private ParlamentLazy() {
         this.tara= "";
         this.nrParlamentari=0;

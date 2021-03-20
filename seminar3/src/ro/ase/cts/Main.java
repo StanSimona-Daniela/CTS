@@ -2,6 +2,7 @@ package ro.ase.cts;
 
 import ro.ase.cts.Clase.Parlament;
 import ro.ase.cts.Clase.ParlamentLazy;
+import ro.ase.cts.Clase.Scortisoara;
 
 public class Main {
     public static void main(String[] args) {
@@ -26,5 +27,11 @@ public class Main {
 
         System.out.println(parlamentLazy1.toString());
         System.out.println(parlamentLazy2.toString());
+
+        System.out.println("======================================");
+        Scortisoara scortisoara1 = Scortisoara.getInstance(20, "p1", 4.4);
+        Scortisoara scortisoara2 = Scortisoara.getInstance(30, "p2", 5.4);
+        System.out.println(scortisoara1.toString());
+        System.out.println(scortisoara2.toString());
     }
 }
