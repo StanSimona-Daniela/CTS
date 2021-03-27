@@ -1,5 +1,7 @@
 package ro.ase.cts.Clase;
 
+//ob e creat doar cand se apeleaza getInstance=>                        LAZYINSTANTIATION
+
 public class ParlamentLazy {
     private String tara;
     private int nrParlamentari;

@@ -1,11 +1,18 @@
 package ro.ase.cts.Clase;
 
+//EAGER=> REFERINTA STATICA e obtinuta prin constructor FP: creeare anticipata
+
+//sau un ENUM cu un un sg element
+
+//REGISTRU DE MAI MULTE SINGLETONURI:
+//  private static HashMap<String, ConexiuneBD> registruConexiuni = new HashMap<>();
+
 public class Parlament {
     private String tara;
     private int nrParlamentari;
     private int durataMandat;
     private String denumireSediu;
-//eager
+
     //un singur apel
     private static Parlament parlament = new Parlament();
 

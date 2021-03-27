@@ -4,10 +4,15 @@ import ro.ase.cts.Clase.Parlament;
 import ro.ase.cts.Clase.ParlamentLazy;
 import ro.ase.cts.Clase.Scortisoara;
 
+//SINGLETON ->
+//CONSTRUCTORI PRIVATI, REFERINTA NULA CATRE OB UNIC, METODA STATICA ce intoarce CONEXIUNEA
+
 public class Main {
     public static void main(String[] args) {
 //        Parlament parlament1 = new Parlament("Romania", 123, 4, "Undeva");
 //        Parlament parlament2 = new Parlament("Bulgara", 456, 14, "In Bulgaria");
+
+        //pointeaza ambele catre aceelasi obiect => NU E OK, PT CA UTILIZATORUL ARE IMPRESIA CA POATE CREEA 2 REFERINTE
 
         Parlament parlament1= Parlament.getInstance();
         Parlament parlament2= Parlament.getInstance();
