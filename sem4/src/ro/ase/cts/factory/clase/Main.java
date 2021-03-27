@@ -10,6 +10,10 @@ public class Main {
 
         System.out.println(medic1);
         System.out.println(asistent1);
+        System.out.println("================");
+
+        PersonalMedical medic2 = FactorySingleton.getInstance().create(TipPersonal.MEDIC, "nume", 12345);
+        System.out.println(medic2);
 
     }
 }
