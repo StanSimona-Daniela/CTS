@@ -1,4 +1,4 @@
-package ro.ase.cts;
+package ro.ase.cts.FactoryMethod;
 
 public abstract class Jucator {
     private String nume;

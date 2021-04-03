@@ -1,4 +1,4 @@
-package ro.ase.cts;
+package ro.ase.cts.FactoryMethod;
 
 public class Portar extends Jucator{
     public Portar(String nume, int nrTricou) {
