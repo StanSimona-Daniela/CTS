@@ -1,4 +1,4 @@
-package ro.ase.cts.composite;
+package composite;
 
 public class Produs implements ComponentaAbstracta{
     private String numeProdus;

@@ -1,4 +1,4 @@
-package ro.ase.cts.composite;
+package composite;
 
 public interface ComponentaAbstracta {
     public void printElement();

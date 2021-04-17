@@ -1,7 +1,6 @@
-package ro.ase.cts.composite;
+package composite;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Sectiune implements ComponentaAbstracta{
     private String numeSectiune;
