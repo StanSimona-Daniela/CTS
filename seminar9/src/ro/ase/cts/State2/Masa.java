@@ -1,24 +1,20 @@
 package ro.ase.cts.State2;
 
-import ro.ase.cts.state.StareOcupata;
-import ro.ase.cts.state.StareRezervata;
-import ro.ase.cts.state.State;
-
 public class Masa {
     private int nrMasa;
-    private Stare state;
+    private Stare stare;
 
     public Masa(int nrMasa) {
         this.nrMasa = nrMasa;
 
     }
 
-     void setState(Stare state) {
-        this.state = state;
+     void setStare(Stare stare) {
+        this.stare = stare;
     }
 
-    public Stare getState() {
-        return state;
+    public Stare getStare() {
+        return stare;
     }
 
     public int getNrMasa() {
@@ -31,15 +27,15 @@ public class Masa {
 
     public void ocupaMasa(){
         StareOcupata stareOcupata = new StareOcupata();
-        stareOcupata.modificaStare(this);
+        stareOcupata.modificaState(this);
     }
     public void elibereazaMasa(){
         StareLibera stareLibera= new StareLibera();
-        stareLibera.modificaStare(this);
+        stareLibera.modificaState(this);
     }
     public void rezervaMasa(){
         StareRezervata stareRezervata= new StareRezervata();
-        stareRezervata.modificaStare(this);
+        stareRezervata.modificaState(this);
     }
 
 }
