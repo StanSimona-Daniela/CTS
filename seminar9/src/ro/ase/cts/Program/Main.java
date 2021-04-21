@@ -3,6 +3,8 @@ package ro.ase.cts.Program;
 import ro.ase.cts.Proxy.ManagerRezervari;
 import ro.ase.cts.Proxy.ProxyManager;
 
+import java.sql.SQLOutput;
+
 public class Main {
     public static void main(String[] args) {
         ManagerRezervari managerRezervari = new ManagerRezervari("AAA");
@@ -11,5 +13,8 @@ public class Main {
         proxyManager.rezerva(2);
 
         proxyManager.rezerva(6);
+
+
+
     }
 }
