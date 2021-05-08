@@ -31,7 +31,7 @@ public class Executant {
     }
 
     public void retragere(float sumaRetrasa){
-        if(sumaRetrasa>= this.sold) {
+        if(sumaRetrasa<= this.sold) {
             this.sold -= sumaRetrasa;
             System.out.println("Sa retras suma de " + sumaRetrasa);
         }
