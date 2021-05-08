@@ -1,5 +1,5 @@
 package composite;
-
+//nod frunza
 public class Produs implements ComponentaAbstracta{
     private String numeProdus;
 
@@ -12,6 +12,7 @@ public class Produs implements ComponentaAbstracta{
         System.out.println("Prdusul "+this.numeProdus);
     }
 
+    //trebuie implemntate pt ca implementez interfata, dar nu ii dau corp, ci doar ii dau exceptii pt ca e nodul frunza
     @Override
     public void adaugaNod(ComponentaAbstracta componentaAbstracta) {
         throw new UnsupportedOperationException();

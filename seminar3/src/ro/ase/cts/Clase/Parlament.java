@@ -7,20 +7,22 @@ package ro.ase.cts.Clase;
 //REGISTRU DE MAI MULTE SINGLETONURI:
 //  private static HashMap<String, ConexiuneBD> registruConexiuni = new HashMap<>();
 
+//              singleton => sa nu se apeleze constructorul de mai multe ori ci doar o sg data, aici
 public class Parlament {
     private String tara;
     private int nrParlamentari;
     private int durataMandat;
     private String denumireSediu;
 
-    //un singur apel
+    //un singur apel, sa nu se apeleze constructorul de mai multe ori ci doar o sg data, aici
     private static Parlament parlament = new Parlament();
 
+    //instanta, care e si statica ... RETURNEZ INSTNTA UNICA, PE CARE O APELEZ DIN MAIN si => singurul ob creat
     public static Parlament getInstance(){
         return parlament;
     }
 
-    //constructori privati
+    //TOTI constructorii privati
     private Parlament() {
         this.tara= "";
         this.nrParlamentari=0;

@@ -1,5 +1,5 @@
 package ro.ase.cts.clase;
-
+//am sters public, sa fei default, pt ca eu din main sa nu vad complexitatea
  class Picolo {
 
     private String nume;
@@ -15,6 +15,7 @@ package ro.ase.cts.clase;
     public void setNume(String nume) {
         this.nume = nume;
     }
+
     public boolean esteAranjata(int nrMasina){
         return nrMasina%5==0;
     }

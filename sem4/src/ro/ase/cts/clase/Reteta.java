@@ -12,7 +12,7 @@ public class Reteta implements AbstractPrototype{
 
     public Reteta(List<String> denumireSolutii, List<Integer> cantitati) {
         this.denumireSolutii = denumireSolutii;
-        //realizare validari
+        //realizare validari ... => consuma timp si resurse !!!!
         this.cantitati = cantitati;
     }
 

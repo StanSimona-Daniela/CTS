@@ -1,6 +1,6 @@
 package Decorator;
 
-public class Card implements CardBancar{
+public class Card implements CardBancar{   //cls conctreta, care implementeaza interfata
     String titular;
 
     public String getTitular() {

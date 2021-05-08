@@ -1,5 +1,5 @@
 package Decorator;
-
+//primeste un card
 public abstract class DecoratorAbstracct implements CardBancar {
     private CardBancar cardBancar;
 

@@ -26,6 +26,7 @@ public class Main {
 //        }
 
 
+        //intoarce boolean
        if( Facade.esteMasaPregatita(new Masa(30, 4))){
            System.out.println("Poftiti la masa");
        }

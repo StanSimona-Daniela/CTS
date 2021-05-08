@@ -1,6 +1,6 @@
 package ro.ase.cs;
 
-public class Leasing {
+public class Leasing { //nu pot modifica nimic aici !! important
     private String numeClient;
     private int suma;
 

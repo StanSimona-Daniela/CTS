@@ -31,5 +31,6 @@ public abstract class Readable {
         aplicant.setPunctaj(punctaj);
         aplicant.setDenumiriProiecte(denumiriProiecte,nr);
     }
-
+//aplicant nu se popate instantia
+    //aplicant se tansm prin referinta, se schimba oricum, deci tipul returnat e void
 }

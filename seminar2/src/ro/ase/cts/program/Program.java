@@ -19,6 +19,8 @@ public class Program {
 		Proiect proiect = new Proiect(80);
 		try {
 			listaAplicanti = citesteAplicanti(new EleviReader("Seminar2/elevi.txt"));
+			//poate primi sa citeasca elevi, dar fis e de angajati=> fac cumva sa primesc ambuu parametri dintr-un ag loc
+			//putem incorpora numele fis in reader, pt ca oricum citesc dintr-un fisier
 			for(Aplicant aplicant:listaAplicanti) {
 				System.out.println(aplicant.toString());
 				System.out.println(aplicant.getFinantare());
