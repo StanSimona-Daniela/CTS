@@ -3,7 +3,6 @@ package ro.ase.cts.Program;
 import ro.ase.cts.clase.Facade;
 import ro.ase.cts.clase.Masa;
 
-
 public class Main {
     public static void main(String[] args) {
 //        Masa masa1 = new Masa(29, 10);
@@ -24,7 +23,6 @@ public class Main {
 //        }else {
 //            System.out.println("Va rog sa mai asteptati");
 //        }
-
 
         //intoarce boolean
        if( Facade.esteMasaPregatita(new Masa(30, 4))){

@@ -1,5 +1,7 @@
 package ro.ase.cts.classes;
-
+//15 D
+//comanda - interfata/ abstarcta
+//muta atributul in clasa abstracta, ca sa nu dea copy paste in toatec lase    => toate fac aceleasi lucruri
 public abstract class ComandaAbstracta {
     private Executant executant;
     private float suma;

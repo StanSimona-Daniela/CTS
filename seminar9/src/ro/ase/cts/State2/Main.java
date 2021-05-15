@@ -6,7 +6,7 @@ public class Main {
         masa1.elibereazaMasa();
         masa1.ocupaMasa();
 
-//        masa1.setState(new StareLibera());
+//        masa1.setState(new StareLibera());  O FAC DEFAULT
         masa1.rezervaMasa();
         masa1.elibereazaMasa();
         masa1.rezervaMasa();

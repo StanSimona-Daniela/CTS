@@ -4,7 +4,7 @@ import ro.ase.cts.Proxy.ManagerRezervari;
 import ro.ase.cts.Proxy.ProxyManager;
 
 import java.sql.SQLOutput;
-
+//B9
 public class Main {
     public static void main(String[] args) {
         ManagerRezervari managerRezervari = new ManagerRezervari("AAA");

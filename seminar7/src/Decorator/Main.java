@@ -1,6 +1,6 @@
 package Decorator;
 
-public class Main {
+public class Main {  //6
     public static void main(String[] args) {
 // adaugare functionalitati la altele vechi
         Card card= new Card("EU"); //card pe care il decoram mai tarziu

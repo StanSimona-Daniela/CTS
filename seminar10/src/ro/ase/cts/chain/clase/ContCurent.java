@@ -5,6 +5,8 @@ public class ContCurent extends  Cont{
         super(sold);
     }
 
+
+    //2 intrebari: ce vreau sa fac, trimit la urm nod?
     @Override
     public void realizeazaPlata(float suma) {
         if(super.getSold()>= suma){

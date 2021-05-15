@@ -1,5 +1,10 @@
 package ro.ase.cts.Proxy;
+//conditionare rezervari
+//funcionalitatea exista, dar trebuie conditionata
+//adaugare niv intermediar cu conditia impusa
 
+
+//proxy - has a cu entitate + implementeaza tipul abstract
 public class ProxyManager implements Rezervabil{
     private ManagerRezervari managerRezervari;
     private int nrMinimPersoane;
@@ -9,6 +14,8 @@ public class ProxyManager implements Rezervabil{
         this.nrMinimPersoane=nrMinimPersoane;
     }
 
+    //in proxi pun filtrul
+    //apelam functionalitatea existenta, daca este respectata conditia
     @Override
     public void rezerva(int nrPersoane) {
         if(nrPersoane>this.nrMinimPersoane){

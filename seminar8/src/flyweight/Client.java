@@ -1,6 +1,9 @@
 package flyweight;
 
+//b 10
+//clasa concreta cu flyweight
 public class Client implements FlyweightAbstract {
+    //starea permanenta
     private String numeClient;
     private String nrTelefon;
     private String email;
@@ -25,6 +28,7 @@ public class Client implements FlyweightAbstract {
         return sb.toString();
     }
 
+    //starea temporara data de detalii
     @Override
     public void printeazaRezervare(Rezervare rezervare) {
         System.out.println(this.toString()+ rezervare.toString());

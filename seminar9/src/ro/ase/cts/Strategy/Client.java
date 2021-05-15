@@ -11,7 +11,7 @@ public class Client {
 
     public void setPlata(Payable plata) {
         this.plata = plata;
-    }
+    }   //la runtime seteze modul de plata
     public void platesteNota(float suma){
         System.out.println("Clientul " + this.nume +" are de realizat o plata.");
         this.plata.pay(suma);

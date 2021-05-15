@@ -1,5 +1,5 @@
 package ro.ase.cts.classes;
-
+//executant = cont bancar
 public class Executant {
 
     private float sold;
@@ -25,6 +25,8 @@ public class Executant {
         this.detinator = detinator;
     }
 
+    //actiunile contului bancar: metode din executant pt ca el le poate face
+    //cate metode, atatea clase concrete = comenziConcrete
     public void creeazaCont(float sold){
         System.out.println("S-a constituit contul cu suma de " + sold);
         this.sold = sold;

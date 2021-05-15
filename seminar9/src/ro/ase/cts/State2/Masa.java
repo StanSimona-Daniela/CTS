@@ -6,7 +6,7 @@ public class Masa {
 
     public Masa(int nrMasa) {
         this.nrMasa = nrMasa;
-
+        this.stare = new StareLibera();
     }
 
      void setStare(Stare stare) {

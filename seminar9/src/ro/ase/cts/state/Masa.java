@@ -6,7 +6,7 @@ public class Masa {
 
     public Masa(int nrMasa) {
         this.nrMasa = nrMasa;
-        this.state = new Libera();
+        this.state = new Libera();  //cand creez masa, o creez libera
     }
     public void cerereRezervare(){
         if(this.state instanceof Libera){

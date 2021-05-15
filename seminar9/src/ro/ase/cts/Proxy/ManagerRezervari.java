@@ -1,5 +1,7 @@
 package ro.ase.cts.Proxy;
 
+//entitatea care implementeaza tipul abstract
+
 public class ManagerRezervari implements Rezervabil {
     private String numeLocal;
 
