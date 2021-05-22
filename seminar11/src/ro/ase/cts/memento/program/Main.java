@@ -7,15 +7,19 @@ public class Main {
     public static void main(String[] args) {
         ManagerMemento managerMemento = new ManagerMemento();
 
-        Meci meci = new Meci("Steaua", "Dinamo",102, 100, 12);
-        meci.setEchipaGazda("Rapid");
-        meci.setNrSpectatori(152);
-        managerMemento.adaugaMemento(meci.creareMemento());
+        Meci meci1 = new Meci("Steaua", "Dinamo", 100, 1500000, 50);
 
-        System.out.println(meci.toString());
+        managerMemento.adaugaMemento(meci1.creareMemento());
 
-        meci.setMemento(managerMemento.getMemento(0));
+        meci1.setEchipaGazda("Rapid");
+        meci1.setNrSpectatori(500000);
+        managerMemento.adaugaMemento(meci1.creareMemento());
 
-        System.out.println(meci.toString());
+        System.out.println(meci1.toString());
+
+        System.out.println("============");
+
+        meci1.setMemento(managerMemento.getMemento(0));
+        System.out.println(meci1.toString());
  }
 }

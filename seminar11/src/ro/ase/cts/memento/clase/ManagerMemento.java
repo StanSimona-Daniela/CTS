@@ -15,18 +15,16 @@ public class ManagerMemento {
     }
 
     public Memento getLastMemento(){
-        if(this.listaMemento.size()!= 0){
-             return  this.listaMemento.get(this.listaMemento.size() -1);
+        if(!(this.listaMemento.isEmpty())){
+            return this.listaMemento.get(this.listaMemento.size()-1);
         }
-        throw  new IndexOutOfBoundsException();
-
+        throw new IndexOutOfBoundsException();
     }
 
     public Memento getMemento(int index){
-        if(this.listaMemento.size()>= 0 && index< this.listaMemento.size()) {
-            return  this.listaMemento.get(index);
-
+        if (index >= 0 && index < this.listaMemento.size()){
+            return this.listaMemento.get(index);
         }
-         throw  new IndexOutOfBoundsException();
+        throw new IndexOutOfBoundsException();
     }
 }
