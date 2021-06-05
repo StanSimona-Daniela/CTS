@@ -1,6 +1,7 @@
-package ro.ase.cts.clase;
+package ro.ase.cts.tests;
 
 import org.junit.Test;
+import ro.ase.cts.clase.Grupa;
 
 import static org.junit.Assert.*;
 

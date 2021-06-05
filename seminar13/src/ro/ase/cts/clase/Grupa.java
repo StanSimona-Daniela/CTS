@@ -39,6 +39,9 @@ public class Grupa {
     }
 
     public void adaugaStudent(IStudent student){
+        if(studenti.size()== 35) {
+           throw  new IllegalArgumentException();
+        }
         studenti.add(student);
     }
 

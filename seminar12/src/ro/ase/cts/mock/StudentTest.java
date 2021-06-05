@@ -1,4 +1,4 @@
-package ro.ase.cts.tests;
+package ro.ase.cts.mock;
 
 import ro.ase.cts.clase.Student;
 
