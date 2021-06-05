@@ -1,6 +1,9 @@
 package ro.ase.cts.tests;
 
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
+import ro.ase.cts.categories.TesteRight;
+import ro.ase.cts.categories.TesteUrgente;
 import ro.ase.cts.clase.Grupa;
 
 import static org.junit.Assert.*;
@@ -8,6 +11,7 @@ import static org.junit.Assert.*;
 public class GrupaTest {
 
     @Test
+    @Category(TesteRight.class)
     public void testConstructorRight(){
         Grupa grupa = new Grupa(1086);
         assertEquals(1086, grupa.getNrGrupa());
@@ -40,6 +44,7 @@ public class GrupaTest {
 
     }
     @Test
+    @Category(TesteUrgente.class)
     public void testConstructorRange(){
         Grupa grupa1 = new Grupa(1001);
         assertEquals(1001, grupa1.getNrGrupa());
